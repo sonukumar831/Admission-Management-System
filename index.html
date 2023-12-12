@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    .bitsindri {
+        box-sizing: border-box;
+        margin: 6px;
+        background: rgba(10, 90, 143, 0.5);
+        padding: 10px;
+        /* background: linear-gradient(45deg, black, white); */
+        /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); */
+        border-radius: 0px 20px 0px 20px;
+    }
+
+    .BIT {
+        color: red;
+    }
+
+    .sindri {
+        color: rgb(255, 255, 0);
+    }
+
+    .bitsindri:hover {
+        /* .bitsindri {
+            box-sizing: border-box;
+            margin: 6px;
+            width: 400px;
+        } */
+        /* .about{
+            display: none;
+        } */
+
+        box-sizing: border-box;
+        background: rgba(10, 90, 143, 0.9);
+        /* background-color: rgb(0, 255, 0); */
+        cursor: pointer;
+        transition-duration: 1s;
+        /* border: 1px solid white; */
+    }
+
+    .bg {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+    }
+</style>
+
+<body>
+    <img class="bg" src="bg.jpg" alt="BIT">
+    <div class='nav-menu'>
+        <div class='bit'>
+            <a href="https://www.bitsindri.ac.in/">
+                <div class="ln">
+                    <img id='logo' src="bitlogo.png" />
+                    <div class='stn'>
+                        <h3>BIT Sindri</h3>
+                        <h6>Second to none</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <ul class='content'>
+            <li><a class="cd" href="index.html">Home</a></li>
+            <li><a class="cd" href="index1.html">About</a></li>
+            <li><a class="cd" href="index2.html">Academics</a></li>
+            <li><a class="cd" href="index3.html">Fee</a></li>
+            <li><a class="cd" href="index4.html">Admissions</a></li>
+            <!-- <li><a class="cd" href="index5.html">Career</a></li> -->
+            <li><a class="cd" href="index6.html">Register</a></li>
+            <li><a class="cd" href="index7.html">Login</a></li>
+            <li><a class="cd" href="index8.html">Admin Login</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <h1 class="about" style="font-size: 40px;text-align: center;margin-top: 10%;color: rgb(55, 102, 74);"><span class="bitsindri"><span
+                    class="BIT"> BIT </span><span class="sindri"> Sindri </span></span> : Legacy of Excellence</h1>
+        <h2 style="text-align: center;color: rgb(42, 112, 102);">ESTD. - 1949</h2>
+    </div>
+</body>
+
+</html>

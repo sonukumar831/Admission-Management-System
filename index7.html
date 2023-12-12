@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index7.css">
+</head>
+
+<body>
+    <img class="bg2" src="bg2.jpg" alt="BIT">
+    <div class='nav-menu'>
+        <div class='bit'>
+            <a href="https://www.bitsindri.ac.in/">
+                <div class="ln">
+                    <img id='logo' src="bitlogo.png" />
+                    <div class='stn'>
+                        <h3>BIT Sindri</h3>
+                        <h6>Second to none</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <ul class='content'>
+            <li><a class="cd" href="index.html">Home</a></li>
+            <li><a class="cd" href="index1.html">About</a></li>
+            <li><a class="cd" href="index2.html">Academics</a></li>
+            <li><a class="cd" href="index3.html">Fee</a></li>
+            <li><a class="cd" href="index4.html">Admissions</a></li>
+            <!-- <li><a class="cd" href="index5.html">Career</a></li> -->
+            <li><a class="cd" href="index6.html">Register</a></li>
+            <li><a class="cd" href="index7.html">Login</a></li>
+            <li><a class="cd" href="index8.html">Admin Login</a></li>
+        </ul>
+    </div>
+    <div id="am" class="main">
+        <!-- <div class="alert"><p>Invalid username or password !</p></div> -->
+        <form class="login" action="index7.php" method="post">
+            <h2>Student Login </h2>
+            <div class="container">
+                <label><b>Application Id</b></label><br>
+                <input type="text" placeholder="Enter application id" name="aid" required><br>
+                <label><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+                <input class="checkbox" type="checkbox" checked="checked"> Remember me<br>
+                <button class="btn" type="submit" value="submit">Login</button><br>
+                <a href="#">Forget Password ?</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

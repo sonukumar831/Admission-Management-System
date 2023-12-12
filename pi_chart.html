@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script>
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Number of Students of Session - 2023-27"
+                },
+                data: [{
+                    type: "pie",
+                    startAngle: 270,
+                    yValueFormatString: "##0.00\"%\"",
+                    indexLabel: "{label} {y}",
+                    dataPoints: [
+                        { y: 40/6.80, label: "CSE" },
+                        { y: 40/6.80, label: "IT" },
+                        { y: 50/6.80, label: "ECE" },
+                        { y: 110/6.80, label: "Electrical" },
+                        { y: 100/6.80, label: "Mechanical" },
+                        { y: 100/6.80, label: "Civil" },
+                        { y: 60/6.80, label: "Chemical" },
+                        { y: 60/6.80, label: "Metal" },
+                        { y: 60/6.80, label: "Mining" },
+                        { y: 60/6.80, label: "Production" }
+                    ]
+                }]
+            });
+            chart.render();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+
+</html>

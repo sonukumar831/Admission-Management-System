@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index6.css">
+</head>
+
+<body>
+    <img class="bg2" src="bg2.jpg" alt="BIT">
+    <div class='nav-menu'>
+        <div class='bit'>
+            <a href="https://www.bitsindri.ac.in/">
+                <div class="ln">
+                    <img id='logo' src="bitlogo.png" />
+                    <div class='stn'>
+                        <h3>BIT Sindri</h3>
+                        <h6>Second to none</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <ul class='content'>
+            <li><a class="cd" href="index.html">Home</a></li>
+            <li><a class="cd" href="index1.html">About</a></li>
+            <li><a class="cd" href="index2.html">Academics</a></li>
+            <li><a class="cd" href="index3.html">Fee</a></li>
+            <li><a class="cd" href="index4.html">Admissions</a></li>
+            <!-- <li><a class="cd" href="index5.html">Career</a></li> -->
+            <li><a class="cd" href="index6.html">Register</a></li>
+            <li><a class="cd" href="index7.html">Login</a></li>
+            <li><a class="cd" href="index8.html">Admin Login</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <h2>Register for Admissions</h2>
+        <form class="admission" action="index6.php" method="POST" style="border:1px solid #ccc">
+            <div class="container">
+                <fieldset class="fieldset">
+                    <legend>Personal Details</legend>
+                    <label><b>Name :</b> </label><br class="br">
+                    <br><input type="text" placeholder="Name" name="sname" required><br>
+                    <label><b>Father's Name :</b></label><br class="br">
+                    <br><input type="text" placeholder="Father's Name" name="fname" required><br>
+                    <label><b>Mother's Name :</b></label><br class="br">
+                    <br><input type="text" placeholder="Mother's Name" name="mname" required><br>
+                    <label><b>Date of Birth :</b></label><br class="br">
+                    <br><input type="date" placeholder="DOB" name="DOB" required><br>
+                    <label><b>Select Gender :</b></label><br class="br">
+                    <select name="gender">
+                        <option default>Select Gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select><br>
+                    <label><b>Phone : </b> </label><br class="br">
+                    <br><input type="tel" name="phone" placeholder="+91 xxxxxxxxxx" required><br>
+                    <!-- <input type="number" placeholder="+91 xxxxxxxxxx" name="phone" required><br> -->
+                    <label><b>Email : </b> </label><br class="br">
+                    <br><input type="email" placeholder="example123@gmail.com" name="email" required><br>
+                    <label><b>Address :</b></label><br class="br">
+                    <br><input type="text" placeholder="Address" name="address" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label><b>Application No. :</b></label><br class="br">
+                    <br><input type="Number" placeholder="Application No." pattern="[0-9]{10}" name="appid"
+                        required><br>
+                    <label><b>Create Password :</b></label><br class="br">
+                    <br><input type="password" placeholder="Password" name="password" required><br>
+                    <label><b>Repeat Password :</b></label><br class="br">
+                    <br><input type="password" placeholder="Confirm Password" name="repassword" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Academic Details</legend>
+                    <label><b>Course opted :</b></label><br class="br">
+                    <select name="course">
+                        <option value="Def">Select Course</option>
+                        <option value="CSE">Computer Science & Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="ECE">Electronics & Communication Engineering</option>
+                        <option value="EE">Electrical Engineering</option>
+                        <option value="ME">Mechanical Engineering</option>
+                        <option value="Civil">Civil Engineering</option>
+                        <option value="Chemical">Chemical Engineering</option>
+                        <option value="metal">Metal Engineering</option>
+                        <option value="mining">Mining Engineering</option>
+                        <option value="production">Production and Industrial Engineering</option>
+                    </select>
+                    <br>
+                    <label><b>10th Marks :</b></label>
+                    <br><input type="Number" placeholder="Enter Board Marks" name="marks1" required pattern="[0-9]{3}"><br>
+                    <label><b>12th Marks :</b></label>
+                    <br><input type="Number" placeholder="Enter Intermediate Marks" name="marks2" required
+                        pattern="[0-9]{3}"><br>
+                    <label><b>Entrance Exam marks :</b></label>
+                    <br><input type="Number" placeholder="Enter marks" name="jee" required pattern="[0-9]{3}"><br>
+                </fieldset>
+                <!-- <fieldset>
+                    <legend>Upload Docoments</legend>
+                    <label><b>Photo</b></label><input type="file" name="photo" required><br>
+                    <label><b>10th Marksheet</b></label><input type="file" name="marksheet10" required><br>
+                    <label><b>12th Marksheet</b></label><input type="file" name="marksheet12" required><br>
+                    <label><b>JEE Marksheet</b></label><input type="file" name="marksheetJEE" required><br>
+                    <label><b>Admission Fee Reciept</b></label><input type="file" name="admissionReciept" required><br>
+                    <label><b>Student Fund Fee Reciept</b></label><input type="file" name="studentReciept" required><br>
+                </fieldset> -->
+                <br>
+                <input  type="checkbox" checked="checked"> Remember me
+                <p>By creating an account you agree to our <a style="color: blue;" href="#">Terms & Privacy</a>.</p>
+
+                <div class="btns">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn" value="Submit">Register</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
